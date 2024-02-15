@@ -13,7 +13,7 @@ app.get("/", (req,res) => {
 
 
 app.get('/produtos', (req, res) => {
-    res.json({message: "Olá"})
+
     res.json( [{nome: 'Bebidas'}, {nome:'Comida'}, {nome: 'Tabacaria'}])
 })
 
