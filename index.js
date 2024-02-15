@@ -13,11 +13,8 @@ app.get("/", (req,res) => {
 
 
 app.get('/produtos', (req, res) => {
-    res.json({
-        message: "ALBEER BEBIDAS"
-        ( [{nome: 'Bebidas'}, {nome:'Comida'}, {nome: 'Tabacaria'}])
-    })
-});
+    res.json( [{nome: 'Bebidas'}, {nome:'Comida'}, {nome: 'Tabacaria'}])
+})
 
 const PORT = 3000;
 
