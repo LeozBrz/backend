@@ -7,13 +7,16 @@ app.use(cors());
 
 app.get("/", (req,res) => {
     res.json({
-        message: "Olá"
+        message: "Entrada"
     });
 });
 
 
 app.get('/produtos', (req, res) => {
-    message: "ALBEER BEBIDAS"
+    res.json({
+        message: "ALBEER BEBIDAS"
+    });
+    
     res.json( [{nome: 'Bebidas'}, {nome:'Comida'}, {nome: 'Tabacaria'}])
 })
 
