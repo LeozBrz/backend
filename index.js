@@ -4,9 +4,13 @@ const app = express();
 
 app.get("/", (req,res) => {
     res.json({
-        message: "Olá"
+        message: "Oi"
     });
 });
+
+app.get('/produtos', (req, res) => {
+    res.json( [{nome: 'celular'}, {nome:'tv'}, {nome: 'sofá'}])
+})
 
 const PORT = 3000;
 
