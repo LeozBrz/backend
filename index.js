@@ -11,8 +11,10 @@ app.get("/", (req,res) => {
     });
 });
 
+
 app.get('/produtos', (req, res) => {
-    res.json( [{nome: 'celular'}, {nome:'tv'}, {nome: 'sofgit pullá'}])
+    message: "ALBEER BEBIDAS"
+    res.json( [{nome: 'Bebidas'}, {nome:'Comida'}, {nome: 'Tabacaria'}])
 })
 
 const PORT = 3000;
